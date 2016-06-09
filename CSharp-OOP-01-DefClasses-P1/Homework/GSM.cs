@@ -6,12 +6,12 @@
     {
         private const string defaultOwner = null;
 
-        public string model;
-        public string manufacturer;
-        public int? price;
-        public string owner;
-        public Battery battery;
-        public Display display;
+        private string model;
+        private string manufacturer;
+        private int? price;
+        private string owner;
+        private Battery battery;
+        private Display display;
 
         private static readonly GSM iPhone4s =
             new GSM("Apple", "iPhone4s", defaultOwner, null, new Battery(), new Display());
