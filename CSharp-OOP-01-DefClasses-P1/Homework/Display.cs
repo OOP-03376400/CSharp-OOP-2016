@@ -59,6 +59,21 @@
             }
         }
 
+        public override string ToString()
+        {
+            string toReturn = "";
+
+            if (this.height==null || this.width == null)
+            {
+                toReturn = "no info"; //if assigned with null throw exception
+            }
+            else
+            {
+                toReturn = this.width + "x" + this.height + "px";
+            }
+
+            return toReturn.ToString();
+        }
 
     }
 }

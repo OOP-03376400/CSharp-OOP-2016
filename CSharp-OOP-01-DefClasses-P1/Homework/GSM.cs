@@ -14,7 +14,7 @@
         private Display display;
 
         private static readonly GSM iPhone4s =
-            new GSM("Apple", "iPhone4s", defaultOwner, null, new Battery(), new Display());
+            new GSM("Apple", "iPhone4s", defaultOwner, null, new Battery("non-removable",1432,BatteryType.LiPo), new Display(640,960,16000000));
 
         //constructors
         public GSM(string manufacturer, string model, string owner, int? price, Battery battery, Display display)
@@ -84,9 +84,23 @@
             }
         }
 
-        public Battery Battery { get; set; }
+        public Battery Battery
+        {
+            get { return this.battery; }
+            set
+            {
+                this.battery = value;
+            }
+        }
 
-        public Display Display { get; set; }
+        public Display Display
+        {
+            get { return this.display; }
+            set
+            {
+                this.display = value;
+            }
+        }
 
         public static GSM IPhone4s
         {
@@ -96,13 +110,13 @@
         //methods
         public override string ToString()
         {
-            return "---   ---   ---   ---   ---\n"
+            return "- - - - - - - - - - - - - - - - -\n"
                 + this.Manufacturer + " " + this.Model
                 + "\nOwner: " + this.Owner
                 + "\nPrice: " + this.Price
-                + "\nBattery: " + this.Battery
-                + "\nDisplay: " + this.Display 
-                + "\n---   ---   ---   ---   ---";
+                + "\nBattery: " + this.battery.ToString()
+                + "\nDisplay: " + this.display.ToString()
+                + "\n- - - - - - - - - - - - - - - - -";
         }
         
     }

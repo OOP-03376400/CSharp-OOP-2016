@@ -36,7 +36,13 @@
                 this.capacity = value;
             }
         }
-        public BatteryType BatteryType { get; set; } //propbably not the best idea for property and class to be equal
+        public BatteryType BatteryType { get; set; } //propbably not the best idea for property and class to have equal names
+
+        public override string ToString()
+        {
+            string toReturn = "model:" + this.Model + ", type:" + this.BatteryType + ", capacity:" + this.capacity + "mAh";
+
+            return toReturn;
+        }
     }
 }
-//TODO : null, probably that way : public Battery? battery = null;
