@@ -93,6 +93,7 @@
             get { return iPhone4s; }
         }
 
+        //methods
         public override string ToString()
         {
             return "---   ---   ---   ---   ---\n"
