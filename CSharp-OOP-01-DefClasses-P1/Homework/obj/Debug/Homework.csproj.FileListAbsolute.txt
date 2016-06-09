@@ -4,3 +4,9 @@ C:\Users\Nikola\desktop\CSharp-OOP-01-DefClasses-P1\Homework\bin\Debug\Homework.
 C:\Users\Nikola\desktop\CSharp-OOP-01-DefClasses-P1\Homework\obj\Debug\Homework.csprojResolveAssemblyReference.cache
 C:\Users\Nikola\desktop\CSharp-OOP-01-DefClasses-P1\Homework\obj\Debug\Homework.exe
 C:\Users\Nikola\desktop\CSharp-OOP-01-DefClasses-P1\Homework\obj\Debug\Homework.pdb
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P1\Homework\bin\Debug\Homework.exe.config
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P1\Homework\obj\Debug\Homework.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P1\Homework\obj\Debug\Homework.pdb
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P1\Homework\bin\Debug\Homework.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P1\Homework\bin\Debug\Homework.pdb
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P1\Homework\obj\Debug\Homework.csprojResolveAssemblyReference.cache

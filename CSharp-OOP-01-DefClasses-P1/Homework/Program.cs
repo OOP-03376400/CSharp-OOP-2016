@@ -8,6 +8,7 @@
         {
             GSM myGSM = new GSM("One Plus", "X");
             Console.WriteLine(myGSM.ToString());
+            Console.WriteLine(GSM.IPhone4s);
         }
     }
 }
