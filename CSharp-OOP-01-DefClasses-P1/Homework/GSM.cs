@@ -87,7 +87,7 @@
         public Battery Battery
         {
             get { return this.battery; }
-            set
+            set //can be private but that will not allow us to exchange it... :)
             {
                 this.battery = value;
             }
@@ -96,7 +96,7 @@
         public Display Display
         {
             get { return this.display; }
-            set
+            private set 
             {
                 this.display = value;
             }
