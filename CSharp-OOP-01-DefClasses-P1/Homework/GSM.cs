@@ -1,6 +1,7 @@
 ﻿namespace Homework
 {
-     using System;
+    using System;
+    using System.Collections.Generic;
 
     public class GSM
     {
@@ -12,6 +13,7 @@
         private string owner;
         private Battery battery;
         private Display display;
+        private List<Call> callHistory;
 
         private static readonly GSM iPhone4s =
             new GSM("Apple", "iPhone4s", defaultOwner, null, new Battery("non-removable",1432,BatteryType.LiPo), new Display(640,960,16000000));
@@ -102,6 +104,12 @@
             }
         }
 
+        public List<Call> CallHistory
+        {
+            get { return new List<Call>(this.callHistory); }
+            private set { this.callHistory = value; }
+        }
+
         public static GSM IPhone4s
         {
             get { return iPhone4s; }
@@ -117,6 +125,57 @@
                 + "\nBattery: " + this.battery.ToString()
                 + "\nDisplay: " + this.display.ToString()
                 + "\n- - - - - - - - - - - - - - - - -";
+        }
+
+        public List<Call> AddCall(Call call)
+        {
+            this.callHistory.Add(call);
+            return this.callHistory;
+        }
+
+        public List<Call> DeleteCall(Call removeCall)
+        {
+            if (!this.callHistory.Contains(removeCall))
+            {
+                throw new ArgumentException("This call doesn't exist!");
+            }
+
+            this.callHistory.Remove(removeCall);
+            return this.callHistory;
+        }
+
+        public void ClearHistory()
+        {
+            this.callHistory.Clear();
+        }
+
+        public decimal TotalCallPrice() //double should be enough in princip
+        {
+            int duration = 0; //seconds
+            decimal minutePrice = 0.37M;
+
+            foreach (var call in callHistory)
+            {
+                duration += call.CallDuration;
+            }
+            
+            decimal totalPrice = (decimal)duration / (decimal)60 * minutePrice;
+            return totalPrice;
+        }
+
+        public void PrintHistory()
+        {
+            if (callHistory.Count > 0)
+            {
+                foreach (var call in callHistory)
+                {
+                    Console.WriteLine(call.Date.ToString().PadLeft(21) + " : call from " + call.PhoneNumber + " " + call.CallDuration + "s");
+                }
+            }
+            else
+            {
+                Console.WriteLine("History is empty");
+            }
         }
         
     }

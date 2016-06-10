@@ -2,7 +2,7 @@
 {
     using System;
 
-    class GSMTest
+    public class GSMTest
     {
         static void Main(string[] args)
         {
@@ -19,6 +19,10 @@
             {
                 Console.WriteLine(gsm);
             }
+
+            Console.WriteLine("\n---------------------------------\nCall history test:");
+            GSMCallHistoryTest.Test();
+
         }
     }
 }
