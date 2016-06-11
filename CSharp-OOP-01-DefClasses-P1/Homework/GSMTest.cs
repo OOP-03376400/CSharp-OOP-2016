@@ -20,7 +20,7 @@
                 Console.WriteLine(gsm);
             }
 
-            Console.WriteLine("\n---------------------------------\nCall history test:");
+            Console.WriteLine("\n-----Call history test-----");
             GSMCallHistoryTest.Test();
 
         }

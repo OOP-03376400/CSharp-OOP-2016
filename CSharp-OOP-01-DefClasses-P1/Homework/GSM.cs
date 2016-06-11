@@ -27,6 +27,7 @@
             this.Price = price;
             this.battery = battery;
             this.display = display;
+            this.callHistory = new List<Call>();
 
         }
 
@@ -107,7 +108,7 @@
         public List<Call> CallHistory
         {
             get { return new List<Call>(this.callHistory); }
-            private set { this.callHistory = value; }
+            set { this.callHistory = value; }
         }
 
         public static GSM IPhone4s
@@ -130,6 +131,7 @@
         public List<Call> AddCall(Call call)
         {
             this.callHistory.Add(call);
+
             return this.callHistory;
         }
 
