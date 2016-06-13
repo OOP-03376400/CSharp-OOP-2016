@@ -1,0 +1,6 @@
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\01-04.Points\bin\Debug\01-04.Points.exe.config
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\01-04.Points\obj\Debug\01-04.Points.csprojResolveAssemblyReference.cache
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\01-04.Points\bin\Debug\01-04.Points.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\01-04.Points\bin\Debug\01-04.Points.pdb
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\01-04.Points\obj\Debug\01-04.Points.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\01-04.Points\obj\Debug\01-04.Points.pdb
