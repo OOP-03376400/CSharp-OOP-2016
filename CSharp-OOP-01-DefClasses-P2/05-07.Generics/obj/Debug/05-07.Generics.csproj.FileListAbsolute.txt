@@ -1,0 +1,6 @@
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\05-07.Generics\bin\Debug\05-07.Generics.exe.config
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\05-07.Generics\bin\Debug\05-07.Generics.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\05-07.Generics\bin\Debug\05-07.Generics.pdb
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\05-07.Generics\obj\Debug\05-07.Generics.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\05-07.Generics\obj\Debug\05-07.Generics.pdb
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\05-07.Generics\obj\Debug\05-07.Generics.csprojResolveAssemblyReference.cache
