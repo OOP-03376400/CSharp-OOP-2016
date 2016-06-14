@@ -1,0 +1,5 @@
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\08-10.Matrix\bin\Debug\08-10.Matrix.exe.config
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\08-10.Matrix\bin\Debug\08-10.Matrix.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\08-10.Matrix\bin\Debug\08-10.Matrix.pdb
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\08-10.Matrix\obj\Debug\08-10.Matrix.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\08-10.Matrix\obj\Debug\08-10.Matrix.pdb

@@ -133,6 +133,46 @@ namespace _05_07.Generics
             count = 0; //in this way all the elements are not accessible!
         }
 
+        public int FindFirst(T element)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (element.Equals(this.elements[i]))
+                {
+                    return (i);
+                }
+            }
+
+            return -1;
+        }
+
+        public T Min()
+        {
+            T min = elements[0];
+            for (int i = 0; i < count; i++)
+            {
+                if (min.CompareTo(elements[i]) > 0)
+                {
+                    min = elements[i];
+                }
+            }
+
+            return min;
+        }
+
+        public T Max()
+        {
+            T max = elements[0];
+            for (int i = 0; i < count; i++)
+            {
+                if (max.CompareTo(elements[i]) < 0)
+                {
+                    max = elements[i];
+                }
+            }
+
+            return max;
+        }
 
         public override string ToString()
         {
