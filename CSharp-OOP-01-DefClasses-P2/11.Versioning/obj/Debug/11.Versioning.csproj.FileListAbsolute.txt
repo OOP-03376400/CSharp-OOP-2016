@@ -1,1 +1,6 @@
 C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\11.Versioning\bin\Debug\11.Versioning.exe.config
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\11.Versioning\obj\Debug\11.Versioning.csprojResolveAssemblyReference.cache
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\11.Versioning\bin\Debug\11.Versioning.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\11.Versioning\bin\Debug\11.Versioning.pdb
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\11.Versioning\obj\Debug\11.Versioning.exe
+C:\Users\Nikola\desktop\C-OOP\CSharp-OOP-01-DefClasses-P2\11.Versioning\obj\Debug\11.Versioning.pdb
