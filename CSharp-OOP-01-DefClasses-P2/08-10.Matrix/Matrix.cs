@@ -71,6 +71,98 @@ namespace _08_10.Matrix
             }
         }
 
+        public static Matrix<T> operator +(Matrix<T> first, Matrix<T> second)
+        {
+            Matrix<T> resultMatrix = new Matrix<T>(first.Rows, first.Cols);
+
+            if (first.Rows != second.Rows || first.Cols!= second.Cols)
+            {
+                throw new Exception("To sum matrices thay have to be with equal rows and columns");
+            }
+
+            for (int i = 0; i < resultMatrix.Rows; i++)
+            {
+                for (int j = 0; j < resultMatrix.Cols; j++)
+                {
+                    resultMatrix[i, j] = first[i, j] + (dynamic)second[i, j]; //easy way to solve with (dynamic) Error	1	Operator '+' cannot be applied to operands of type 'T' and 'T''
+
+                }
+            }
+
+            return resultMatrix;
+        }
+
+        public static Matrix<T> operator -(Matrix<T> first, Matrix<T> second)
+        {
+            Matrix<T> resultMatrix = new Matrix<T>(first.Rows, first.Cols);
+
+            if (first.Rows != second.Rows || first.Cols != second.Cols)
+            {
+                throw new Exception("To sum matrices thay have to be with equal rows and columns");
+            }
+
+            for (int i = 0; i < resultMatrix.Rows; i++)
+            {
+                for (int j = 0; j < resultMatrix.Cols; j++)
+                {
+                    resultMatrix[i, j] = first[i, j] - (dynamic)second[i, j];
+
+                }
+            }
+
+            return resultMatrix;
+        }
+
+        public static Matrix<T> operator *(Matrix<T> first, Matrix<T> second)
+        {
+            Matrix<T> resultMatrix = new Matrix<T>(first.Rows, second.Cols);
+
+            if (first.Rows != second.Cols)
+            {
+                throw new Exception("The rows of first matrix and the columns of the second matrix should be equal");
+            }
+
+            for (int i = 0; i < resultMatrix.Rows; i++)
+            {
+                for (int j = 0; j < resultMatrix.Cols; j++)
+                {
+                    dynamic tempSum = 0;
+                    for (int k = 0; k < second.Rows; k++)
+                    {
+                        tempSum += (dynamic)first[i, k] * second[k, j];
+                    }
+                    resultMatrix[i, j] = tempSum;
+                }
+            }
+
+            return resultMatrix;
+        }
+
+        private static bool IsAllZeroes (Matrix<T> matrix)
+        {
+            for (int i = 0; i < matrix.Rows; i++)
+            {
+                for (int j = 0; j < matrix.Cols; j++)
+                {
+                    if (matrix[i,j]!=(dynamic)0)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        public static bool operator false(Matrix<T> matrix)
+        {
+            return IsAllZeroes(matrix);
+        }
+
+        public static bool operator true(Matrix<T> matrix)
+        {
+            return IsAllZeroes(matrix);
+        }
+
         public override string ToString()
         {
             string result = string.Empty;
@@ -79,7 +171,7 @@ namespace _08_10.Matrix
             {
                 for (int j = 0; j < this.cols; j++)
                 {
-                    result += this.matrix[i, j] + " ";
+                    result += this.matrix[i, j].ToString().PadLeft(4);
                 }
                 result += "\n";
             }
