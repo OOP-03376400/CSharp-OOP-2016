@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.IEnumerableExtensions", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-05.TaskStudents", "03-05.TaskStudents\03-05.TaskStudents.csproj", "{0F8FBE26-1975-4008-9C1C-13827E250897}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.DivisibleBy7And3", "06.DivisibleBy7And3\06.DivisibleBy7And3.csproj", "{86F4E089-327F-4D18-AC0D-575A61B47E1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{0F8FBE26-1975-4008-9C1C-13827E250897}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F8FBE26-1975-4008-9C1C-13827E250897}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F8FBE26-1975-4008-9C1C-13827E250897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F4E089-327F-4D18-AC0D-575A61B47E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F4E089-327F-4D18-AC0D-575A61B47E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F4E089-327F-4D18-AC0D-575A61B47E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F4E089-327F-4D18-AC0D-575A61B47E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
