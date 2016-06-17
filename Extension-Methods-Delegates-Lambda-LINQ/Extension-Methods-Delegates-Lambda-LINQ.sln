@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.IEnumerableExtensions", "02.IEnumerableExtensions\02.IEnumerableExtensions.csproj", "{2BAB3F0C-C77E-42AB-A0CE-50DE9D7DFA56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-05.TaskStudents", "03-05.TaskStudents\03-05.TaskStudents.csproj", "{0F8FBE26-1975-4008-9C1C-13827E250897}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{2BAB3F0C-C77E-42AB-A0CE-50DE9D7DFA56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BAB3F0C-C77E-42AB-A0CE-50DE9D7DFA56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BAB3F0C-C77E-42AB-A0CE-50DE9D7DFA56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8FBE26-1975-4008-9C1C-13827E250897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8FBE26-1975-4008-9C1C-13827E250897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8FBE26-1975-4008-9C1C-13827E250897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8FBE26-1975-4008-9C1C-13827E250897}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
