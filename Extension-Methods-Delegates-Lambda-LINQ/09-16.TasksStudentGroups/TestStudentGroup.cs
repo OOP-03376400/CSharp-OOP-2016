@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class TestStudentGroip
+    public class TestStudentGroup
     {
         public static void Main()
         {

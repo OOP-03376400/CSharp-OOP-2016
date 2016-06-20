@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6C23465D-D4B9-499A-9ABB-9ECF7C7D4A23}</ProjectGuid>
+    <ProjectGuid>{5E1DF930-9195-429C-B05C-2657C969B9BD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_09_16.TasksStudentGroups</RootNamespace>
-    <AssemblyName>09-16.TasksStudentGroups</AssemblyName>
+    <RootNamespace>_18_19.GroupedByGroupNumber</RootNamespace>
+    <AssemblyName>18-19.GroupedByGroupNumber</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Student.cs" />
-    <Compile Include="TestStudentGroup.cs" />
+    <Compile Include="GroupedByGroupNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
