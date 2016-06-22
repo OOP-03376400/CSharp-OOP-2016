@@ -1,18 +1,19 @@
-﻿namespace _01.SchoolClasses
+﻿//Define abstract class Human with a first name and a last name.
+
+namespace _02.StudentsAndWorkers
 {
     using System;
 
-    public class Person : ICommentable
+    public abstract class Human
     {
         private string firstName;
         private string lastName;
 
-        public Person(string firstName, string lastName)
+        public Human(string firstName, string lastName)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
         }
-
 
         public string FirstName
         {
@@ -40,6 +41,5 @@
             }
         }
 
-        public string Comment { get; set; }
     }
 }
