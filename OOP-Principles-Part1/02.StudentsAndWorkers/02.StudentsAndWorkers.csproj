@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36D66E02-99DE-4E1D-9DD0-7F52F4E76BF6}</ProjectGuid>
+    <ProjectGuid>{BE8B7FE9-7339-47CB-9F8F-810356FEB2EF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01.SchoolClasses</RootNamespace>
-    <AssemblyName>01.SchoolClasses</AssemblyName>
+    <RootNamespace>_02.StudentsAndWorkers</RootNamespace>
+    <AssemblyName>02.StudentsAndWorkers</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class.cs" />
-    <Compile Include="Discipline.cs" />
-    <Compile Include="ICommentable.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Teacher.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
