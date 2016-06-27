@@ -1,4 +1,4 @@
-﻿namespace _02.BankAccounts
+﻿namespace _02.BankAccounts.Customers
 {
     using System;
 
@@ -8,7 +8,7 @@
 
         public Customer(string name)
         {
-
+            this.Name = name;
         }
 
         public string Name

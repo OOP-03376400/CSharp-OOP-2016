@@ -1,4 +1,4 @@
-﻿namespace _02.BankAccounts
+﻿namespace _02.BankAccounts.Customers
 {
     using System;
 

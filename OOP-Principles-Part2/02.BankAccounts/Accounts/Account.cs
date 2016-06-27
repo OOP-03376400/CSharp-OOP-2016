@@ -1,6 +1,7 @@
-﻿namespace _02.BankAccounts
+﻿namespace _02.BankAccounts.Accounts
 {
     using System;
+    using _02.BankAccounts.Customers;
 
     public abstract class Account
     {
