@@ -1,10 +1,6 @@
 ﻿namespace _01_03.StudentClass
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class Student
     {
@@ -154,6 +150,11 @@
         {
             var secondStudent = student as Student;
 
+            if (secondStudent == null)
+            {
+                throw new ArgumentNullException("Second student shouldn't be null!");
+            }
+
             if (secondStudent.FirstName == this.FirstName && secondStudent.SSN == this.SSN && secondStudent.LastName == this.LastName)
             {
                 return true;
@@ -176,5 +177,41 @@
             return !student1.Equals(student2);
         }
 
+        public object Clone()
+        {
+            return ObjectCopier.Clone<Student>(this);
+        }
+
+        public int CompareTo(Student another) //https://msdn.microsoft.com/en-us/library/system.icomparable%28v=vs.110%29.aspx
+        {
+            //Student anotherStudent = another as Student; //here you can check if the object is really Student(some change in the code needed)
+
+            //if (anotherStudent == null)
+            //{
+            //    throw new ArgumentException("Object is not a student!");
+            //}
+
+            if (this.FirstName.CompareTo(another.FirstName) != 0)
+            {
+                return this.FirstName.CompareTo(another.FirstName);
+            }
+
+            if (this.MiddleName.CompareTo(another.MiddleName) != 0)
+            {
+                return this.MiddleName.CompareTo(another.MiddleName);
+            }
+
+            if (this.LastName.CompareTo(another.LastName) != 0)
+            {
+                return this.LastName.CompareTo(another.LastName);
+            }
+
+            if (this.SSN.CompareTo(another.SSN) != 0)
+            {
+                return this.SSN.CompareTo(another.SSN);
+            }
+
+            return 0;
+        }
     }
 }
