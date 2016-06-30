@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Student
+    public class Student : ICloneable, IComparable<Student>
     {
         private string firstName;
         private string middleName;
@@ -143,6 +143,7 @@
 
         public override string ToString()
         {
+
             return string.Format("{0} {1} {2} - {3} - student in {4}. He is {5} course {6} im {7} faculty\nPersonal data: \naddress: {8}\nphone number: {9}\ne-mial: {10} ", this.firstName, this.middleName, this.lastName, this.ssn, this.University, this.course, this.Specialty, this.Faculty, this.permanentAddress, this.mobilePhone, this.email);
         }
 
@@ -150,10 +151,10 @@
         {
             var secondStudent = student as Student;
 
-            if (secondStudent == null)
-            {
-                throw new ArgumentNullException("Second student shouldn't be null!");
-            }
+            //if (secondStudent == null)
+            //{
+            //    return false;
+            //}
 
             if (secondStudent.FirstName == this.FirstName && secondStudent.SSN == this.SSN && secondStudent.LastName == this.LastName)
             {
@@ -179,9 +180,9 @@
 
         public object Clone()
         {
-            return ObjectCopier.Clone<Student>(this);
+            return new Student(this.firstName, this.middleName, this.lastName, this.ssn, this.permanentAddress,
+                this.mobilePhone, this.email, this.course, this.Specialty, this.Faculty, this.University);
         }
-
         public int CompareTo(Student another) //https://msdn.microsoft.com/en-us/library/system.icomparable%28v=vs.110%29.aspx
         {
             //Student anotherStudent = another as Student; //here you can check if the object is really Student(some change in the code needed)

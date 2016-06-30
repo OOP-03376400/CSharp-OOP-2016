@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03.StudentClass", "01-03
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.PersonClass", "04.PersonClass\04.PersonClass.csproj", "{5EA3673A-8485-43F9-B34D-7AFDA056990F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.64BitArray", "05.64BitArray\05.64BitArray.csproj", "{6D55F66E-5023-4C46-80A0-9464ADDFBC11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.BinarySearchTree", "06.BinarySearchTree\06.BinarySearchTree.csproj", "{2D744318-A11C-4737-8A6A-AD6ED6E400FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{5EA3673A-8485-43F9-B34D-7AFDA056990F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EA3673A-8485-43F9-B34D-7AFDA056990F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EA3673A-8485-43F9-B34D-7AFDA056990F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D55F66E-5023-4C46-80A0-9464ADDFBC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D55F66E-5023-4C46-80A0-9464ADDFBC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D55F66E-5023-4C46-80A0-9464ADDFBC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D55F66E-5023-4C46-80A0-9464ADDFBC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D744318-A11C-4737-8A6A-AD6ED6E400FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D744318-A11C-4737-8A6A-AD6ED6E400FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D744318-A11C-4737-8A6A-AD6ED6E400FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D744318-A11C-4737-8A6A-AD6ED6E400FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

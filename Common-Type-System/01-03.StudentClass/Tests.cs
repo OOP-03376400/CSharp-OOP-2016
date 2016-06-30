@@ -14,10 +14,11 @@
             Student clone = nikola;
             Console.WriteLine(clone);
             Console.WriteLine(nikola == clone);
+
             var copy = nikola.Clone();
-            /*
+            
             Console.WriteLine(nikola == copy);
-            Console.WriteLine(nikola != copy);*/
+            Console.WriteLine(nikola != copy);
             Console.WriteLine(nikola.GetHashCode());
             //Console.WriteLine(nikola.Equals(copy));
 
